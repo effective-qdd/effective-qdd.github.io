@@ -4,7 +4,7 @@ title:  "Welcome to my github page"
 date:   2018-8-10 14:38:02
 categories: jekyll
 tags: jekyll
-excerpt: Jekyll ´î½¨github page
+excerpt: Jekyll github page
 mathjax: true
 ---
 
