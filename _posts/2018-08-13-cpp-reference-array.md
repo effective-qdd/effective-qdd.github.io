@@ -1,11 +1,11 @@
 ---
 layout: post
-title: markdown 语法示例
+title: 数组
 date: 2018-8-13
 categories: markdowm
 tags: markdowm
+excerpt: C++ 数组参考
 mathjax: true
-published: true
 ---
 
 # 数组
