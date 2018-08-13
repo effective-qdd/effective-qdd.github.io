@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-## LaTeX 公式
+## LaTeX 公式 （github暂不支持）
 
 可以创建行内公式，例如 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。或者块级公式：
 
@@ -74,7 +74,7 @@ $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 | Phone     |   12 USD |  12  |
 | Pipe      |    1 USD | 234  |
 
-## 流程图
+## 流程图 （github暂不支持）
 
 ```flow
 st=>start: Start
@@ -87,7 +87,7 @@ cond(yes)->e
 cond(no)->op
 ```
 
-## 时序图
+## 时序图 （github暂不支持）
 
 ```sequence
 Alice->Bob: Hello Bob, how are you?
