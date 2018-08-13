@@ -4,8 +4,8 @@ title: markdown 语法示例
 date: 2018-8-13
 categories: markdowm
 tags: markdowm
+excerpt: 列出了常用的markdown语法，以作参考。
 mathjax: true
-published: true
 ---
 
 # Markdown 语法示例
