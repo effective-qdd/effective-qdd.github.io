@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-## LaTeX 公式 （github暂不支持）
+## LaTeX 公式
 
 可以创建行内公式，例如 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。或者块级公式：
 
