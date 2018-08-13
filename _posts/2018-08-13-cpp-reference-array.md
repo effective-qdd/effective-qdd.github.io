@@ -167,6 +167,7 @@ if (std::find(std::begin(a), std::end(a), 2) != std::end(a))
 ```
 
 ## C++ 11 std::array
+
 std::array是一个**固定长度**的类数组容器。但是不像C-style数组，它不能自动退化（decay）成指针（T*）。
 
 ``` c++
@@ -179,8 +180,13 @@ std::sort(a1.begin(), a1.end());
 ## 数组和std::shared_ptr
 
 c++ 11中使用std::shared_ptr管理动态分配的数组，必须构造一个删除器。
+
 `auto sp = std::shared_ptr(new int[len], [](char *p){delete []p;});`
+
 或者删除器也可以这样写
+
 `std::shared_ptr<int> sp( new int[10], std::default_delete<int[]>() );`
+
 c++ 17中std::shared_ptr可以直接用来管理动态分配的数组，不须要再构造一个删除器。
+
 `shared_ptr<int[]> sp(new int[10]);`
