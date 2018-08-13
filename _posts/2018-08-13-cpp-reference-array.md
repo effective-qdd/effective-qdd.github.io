@@ -2,8 +2,8 @@
 layout: post
 title: 数组
 date: 2018-8-13
-categories: markdowm
-tags: markdowm
+categories: cpp
+tags: reference
 excerpt: C++ 数组参考
 mathjax: true
 ---
