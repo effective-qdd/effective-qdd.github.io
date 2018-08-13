@@ -4,6 +4,7 @@ title: markdown 语法示例
 date: 2018-8-13
 categories: markdowm
 tags: markdowm
+mathjax: true
 ---
 
 # Markdown 语法示例
@@ -97,9 +98,9 @@ Bob-->Alice: I am good thanks!
 
 ## 复选框
 
-- [x] 已完成事项
-- [ ] 待办事项1
-- [ ] 待办事项2
+* [x] 已完成事项
+* [ ] 待办事项1
+* [ ] 待办事项2
 
 [^demo]: 这是一个示例脚注。
 
