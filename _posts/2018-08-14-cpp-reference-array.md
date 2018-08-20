@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++ 数组
-date: 2018-8-13
+date: 2018-8-14
 categories: cpp
 tags: reference
 excerpt: 数组是一种复合类型。数组的声明形如a[d]，其中a是数组的名字，d是数组的维度。维度说明了数组中元素的个数。
