@@ -79,3 +79,24 @@ struct X { operator B(); } x;
 const A& r = x;
 B&& rrb = x;    // 直接绑定到转换的结果
 ```
+
+# 引用限定符
+
+在旧的标准中，我们没有办法阻止下面这种使用方式。为了维持向后兼容性，新的标准任然允许向右值复制。但是，我们可能希望在自己的类中阻止这种做法。我们希望强制左侧运算对象是一个左值。我们可以在参数列表后放置一个引用限定符。
+
+```c++
+string s1 = "a value";
+string s2 = "another";
+auto n = (s1 + s2).find('a'); //string的右值上调用find
+s1 + s2 = "wow"; //直接对右值赋值
+
+class Foo
+{
+public:
+  Foo &operator=(const Foo&) &; //左值引用限定符
+  Foo &operator=(const Foo&) &&; //右值引用限定符
+
+  Foo sorted() &&; //可用于可改变的右值。
+  Foo sorted() const &; //可用于任何类型的Foo
+}
+```
