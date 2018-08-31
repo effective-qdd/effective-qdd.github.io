@@ -453,11 +453,11 @@ cout << sizeof...(args) << endl; //函数参数数目
 
 ```c++
 //函数模板特例化
-template <typename T> int Comapre(const T&, const T&);
+template <typename T> int Comapre(T const&, T const&);
 
 template <> //函数模板特例化
-//其中T为const char *。接受字符串常量。常量指针为char *const。所以最后特例化版本是const char *const &
-int Comapre(const char *const &p1, const char *const &p2); 
+//其中T为char const*。接受字符串常量。常量指针为char * const。所以最后特例化版本是char const*const &
+int Comapre(char const*const &p1,  char const*const &p2);
 //类模板特例化
 template <typename T>
 class Foo
